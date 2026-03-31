@@ -12,16 +12,13 @@ This repository is a small, polished, and reproducible `Python` project for pred
 ## Project structure
 
 Dynamic-Attention-Allocation-System/
-├── data/
-│   └── data.csv
-├── model/
-│   └── model.pkl
-├── src/
-│   ├── train.py
-│   ├── predict.py
-│   ├── data.py
-│   ├── features.py
-│   └── pipeline.py
+├── data.csv
+├── model.pkl
+├── train.py
+├─  predict.py
+├── data.py
+├── features.py
+│── pipeline.py
 ├── README.md
 └── requirements.txt
 
