@@ -42,13 +42,13 @@ Dynamic-Attention-Allocation-System/
 ### Full workflow (recommended)
 
 ```bash
-python src/pipeline.py
+python pipeline.py
 ```
 
 ### Train only
 
 ```bash
-python src/train.py --data data/data.csv --model model/model.pkl --rebuild
+python train.py --data data.csv --model model.pkl --rebuild
 ```
 
 ### Prediction
@@ -56,19 +56,19 @@ python src/train.py --data data/data.csv --model model/model.pkl --rebuild
 #### Single input (interactive fallback)
 
 ```bash
-python src/predict.py --mode single
+python predict.py --mode single
 ```
 
 or values with flags:
 
 ```bash
-python src/predict.py --mode single --urgency 8 --difficulty 5 --time_left 10 --importance 9 --past_delay 1
+python predict.py --mode single --urgency 8 --difficulty 5 --time_left 10 --importance 9 --past_delay 1
 ```
 
 #### Batch input
 
 ```bash
-python src/predict.py --mode batch --input data/data.csv --output data/results.csv
+python predict.py --mode batch --input data.csv --output results.csv
 ```
 
 ## Key details
@@ -79,8 +79,8 @@ python src/predict.py --mode batch --input data/data.csv --output data/results.c
 
 ## What is in `data/` and `model/`
 
-- `data/data.csv`: contains task samples and ground truth priorities (generated if absent)
-- `model/model.pkl`: saved trained model (produced by `train.py`)
+- `data.csv`: contains task samples and ground truth priorities (generated if absent)
+- `model.pkl`: saved trained model (produced by `train.py`)
 
 ## Suggested enhancements
 
